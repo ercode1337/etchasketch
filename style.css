@@ -21,6 +21,8 @@ body {
     position: absolute;
     top: 54.5%;
     left: 62%;
+    right: 0%;
+    bottom: 0%;
     transform: translate(-50%, -50%);
   }
 
@@ -61,18 +63,21 @@ body {
   }
   #menu {
     color: black;
+    display: flex;
+    justify-content: center;
     height: 82vh;
     width: 200px;
     background-color: white;
-    margin: 0;
     padding: 50px;
     border-radius: 8px;
     border-style: solid;
     border-color: black;
-    display: flex;
-    justify-content: center;
-    left: -50%;
-    transform: translate(50%);
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    top: 1%;
+    transform: translate(35%);
+    position: absolute;
   }
 
   #title {
@@ -86,12 +91,17 @@ body {
   }
 
   #menuContent {
-    display: flex;
-    justify-content: center;
+    background-color: #98989c;
+    padding: 20px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: black;
+    font-weight: 600;
     margin-top: 100px;
-    width: 190px;
+    width: 178px;
     font-family: 'Courier New', Courier, monospace;
     position: absolute;
+    border-width: 2px;
   }
 
   .grid-item:hover {
@@ -123,6 +133,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+    border-radius: 100px;
 
   }
    
@@ -133,6 +144,7 @@ body {
     height: 25px;
     background: #4CAF50;
     cursor: pointer;
+    border-radius: 100%;
   }
    
   #slider::-moz-range-thumb {
@@ -140,6 +152,7 @@ body {
     height: 25px;
     background: black;
     cursor: pointer;
+    border-radius: 100%;
   }
 
   .buttons {
@@ -152,12 +165,38 @@ body {
     background-color: #98989c;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
+    top: 25%;
+    left: 83%;
+    transform: translate(-100%, -50%);
   }
 
   #eraser {
     margin-top: 250px;
   }
 
-  #black {
+  .eraserHov:hover {
+    background-color: white;
+  }
+
+  #eraser:hover {
+    background-color: #5A5A5A;
+  }
+
+  .eraserHov2:hover {
+    background-color: white;
+  }
+
+  #clear {
     margin-top: 350px;
+  }
+
+  #clear:hover {
+    background-color: #5A5A5A;
+  }
+
+  #tag {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    margin-top: 30px;
+    position: absolute;
   }
