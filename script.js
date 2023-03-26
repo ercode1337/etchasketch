@@ -90,6 +90,3 @@ function destroyGrid(num) {
 }
 
 createGrid(16);
-
-const title = document.getElementById("title");
-title.innerText = 'Etch-a-Sketch!';

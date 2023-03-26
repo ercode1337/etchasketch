@@ -10,7 +10,7 @@
 </head>
 <body>
     <script>
-        document.onselectstart = function(){ return false; } 
+        document.onselectstart = function(){ return false; }
     </script>
     <div id="sliderBg">
     <input type="range" id="slider" min="2" max="100" value="2">
@@ -19,11 +19,24 @@
     </div>
     <div id="menu">
         <div id="title"></div>
-        <div id="menuContent">Play the game by clicking the grids inside the Etch-a-Sketch square<br><br>Drag the range slider to adjust grid size</div>
+        <div id="menuContent">Play the game by clicking the grids inside the Etch-a-Sketch square and drag the range slider to adjust grid size</div>
         <div id="tag">Coded by ercode1337</div>
         <button class="buttons" id="eraser">Eraser</button>
         <button class="buttons" id="clear">Clear the grid</button>
     </div>
-    </div>
+    <script>
+        const title = document.getElementById("title");
+        const txt = `Etch-a-Sketch!`;
+        let i = 0;
+
+        const intervalId = setInterval(function () {
+            title.innerHTML += txt[i];
+            i++;
+
+            if (i === txt.length) {
+                clearInterval(intervalId);
+            }
+        }, 100);
+    </script>
 </body>
 </html>
